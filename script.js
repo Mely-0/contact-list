@@ -38,7 +38,7 @@ function mostrar (lista){
     
 let items = Object.keys(lista)
 
-     for (let i = 1; i <= items.length ; i++) {
+    for (let i = 1; i <= items.length ; i++) {
         contactosMostrar += " _"+lista[i]
         
     }
