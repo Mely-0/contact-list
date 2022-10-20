@@ -7,9 +7,9 @@ let lista={
 let i = 5;
 let aviso = ""
 let contactosMostrar = "";
+let modi ="";
 
-
-let opciones_usuario = parseInt(prompt("1)añadir contacto \n 2)aliminar un contacto \n 3) mostrar un contacto"))
+let opciones_usuario = parseInt(prompt("1)añadir contacto \n 2)aliminar un contacto \n 3) mostrar un contacto \n 4)modificar"))
 
 
 if (opciones_usuario == 1 ){
@@ -25,7 +25,10 @@ if (opciones_usuario == 1 ){
     }else if (opciones_usuario == 3){
     mostrar(lista)
     }
-    
+    else if (opciones_usuario == 4){
+    modi = prompt("digite que contacto desea modificar");
+    modificar(modi)
+}
     function añadir (newcont){
         lista[i] = newcont;
         i++; 
@@ -34,6 +37,10 @@ if (opciones_usuario == 1 ){
 
 function borrar (borra){
     delete lista [borra]
+}
+function modificar(){
+    let reempla =(prompt("didite el nuevo contacto"))
+lista[modi] = reempla;
 }
 function mostrar (lista){
     
